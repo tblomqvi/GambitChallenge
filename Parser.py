@@ -248,19 +248,19 @@ class Parser:
 			},
 			"totalTravelTime":{
 				"Value": totalTravelTime,
-				"Unit": "Micro-sec"
+				"Unit": "micro-sec"
 			},
 			"deltaTravelTime":{
 				"Value": deltaTravelTime,
-				"Unit": "Micro-sec"
+				"Unit": "micro-sec"
 			},
 			"upstreamTravelTime":{
 				"Value": upstreamTravelTime,
-				"Unit": "Micro-sec"
+				"Unit": "micro-sec"
 			},
 			"downstreamTravelTime":{
 				"Value": downstreamTravelTime,
-				"Unit": "Micro-sec"
+				"Unit": "micro-sec"
 			},
 			"outputCurrent":{
 				"Value": outputCurrent,

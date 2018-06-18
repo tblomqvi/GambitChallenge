@@ -1,0 +1,32 @@
+$def with (data)
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			table, th, td{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 align="center">Gambit Challenge</h1>
+		<table style="width:100%">
+			<tr>
+				<th>Parameter</th>
+				<th>Value</th>
+				<th>Unit</th>
+			</tr>
+			$for key in list(data):
+				<tr>
+					<td> $key </td>
+					<td> $data[key]["Value"] </td>
+					<td> $data[key]["Unit"] </td>
+				</tr>
+			
+			
+		</table>
+		
+	</body>
+</html>
+

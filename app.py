@@ -8,8 +8,15 @@ urls = (
 )
 
 class Index:
+
+	def __init__(self):
+		self.render = web.template.render("templates/")
+	
 	def GET(self):
-		return "Hello world!"
+		pars = Parser()
+		pars.readFeed()
+		data = pars.get_data()
+		return self.render.page(data)
 		
 
 class dump:
