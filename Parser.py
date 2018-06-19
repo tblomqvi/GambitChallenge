@@ -208,7 +208,7 @@ class Parser:
 			},
 			"calendar":{
 				"Value": calendar,
-				"Unit": ""
+				"Unit": "YYMMDDHHMMSS"
 			},
 			"dayHourForAutoSave":{
 				"Value": dayHourForAutoSave,
