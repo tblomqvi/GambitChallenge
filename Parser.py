@@ -297,7 +297,11 @@ class Parser:
 		}		
 	
 	
-	def get_data(self):
-		return data
-	
+	def get_data(self,keys=None):
+		global data
+		if keys:
+			data = dict(zip(keys,map(data.get,keys)))
+			return data
+		else:
+			return data
 
