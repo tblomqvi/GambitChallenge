@@ -2,7 +2,8 @@ from bitstring import Bits
 
 class Parser:
 	
-	
+	# Parses binary data to float, int or uint.
+	# type is specified as __parse(reg).float
 	def __parse(self,*reg):
 		if len(reg)==2:
 			val = format(reg[0],"b").zfill(16)+format(reg[1],"b").zfill(16)
@@ -10,7 +11,8 @@ class Parser:
 		elif len(reg)==1:
 			val = format(reg[0],"b").zfill(16)
 			return Bits(bin = val)
-
+			
+	# Parses binary data to BCD
 	def __parseBCD(self,*reg):
 		if len(reg)==1:
 			val = format(reg[0],"b").zfill(16)
@@ -296,7 +298,8 @@ class Parser:
 			}
 		}		
 	
-	
+	# Returns data as python dictionary.
+	# If keys are not specified, all data is returned.
 	def get_data(self,keys=None):
 		global data
 		if keys:
